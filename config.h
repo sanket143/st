@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Noto Sans Mono:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -96,34 +96,57 @@ unsigned int tabspaces = 2;
 /* bg opacity */
 float alpha = 0.8;
 
+/*
+{
+    "name": "Tomorrow Night Burns",
+    "black": "#252525",
+    "red": "#832e31",
+    "green": "#a63c40",
+    "yellow": "#d3494e",
+    "blue": "#fc595f",
+    "purple": "#df9395",
+    "cyan": "#ba8586",
+    "white": "#f5f5f5",
+    "brightBlack": "#5d6f71",
+    "brightRed": "#832e31",
+    "brightGreen": "#a63c40",
+    "brightYellow": "#d2494e",
+    "brightBlue": "#fc595f",
+    "brightPurple": "#df9395",
+    "brightCyan": "#ba8586",
+    "brightWhite": "#f5f5f5",
+    "background": "#151515",
+    "foreground": "#a1b0b8"
+}
+*/
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  "black",
-  "red3",
-  "green3",
-  "yellow3",
-  "blue2",
-  "magenta3",
-  "cyan3",
-  "gray90",
+  "#252525", /* black   */
+  "#832e31", /* red     */
+  "#a63c40", /* green   */
+  "#d3494e", /* yellow  */
+  "#fc595f", /* blue    */
+  "#df9395", /* magenta */
+  "#ba8586", /* cyan    */
+  "#f5f5f5", /* white   */
 
-  /* 8 bright colors */
-  "gray50",
-  "red",
-  "green",
-  "yellow",
-  "#5c5cff",
-  "magenta",
-  "cyan",
-  "white",
+ /* 8 bright colors */
+  "#5d6f71", /* black   */
+  "#832e31", /* red     */
+  "#a63c40", /* green   */
+  "#d2494e", /* yellow  */
+  "#fc595f", /* blue    */
+  "#df9395", /* magenta */
+  "#ba8586", /* cyan    */
+  "#f5f5f5", /* white   */
 
   [255] = 0,
 
   /* more colors can be added after 255 to use with DefaultXX */
-  "#cccccc",
-  "#555555",
-  "black",
+  "#ffffff", // background
+  "#3e3e3e", // foreground
 };
 
 
@@ -131,10 +154,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
