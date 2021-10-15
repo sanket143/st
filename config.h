@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Noto Sans Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Noto Sans Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -95,30 +95,6 @@ unsigned int tabspaces = 2;
 
 /* bg opacity */
 float alpha = 0.8;
-
-/*
-{
-    "name": "Tomorrow Night Burns",
-    "black": "#252525",
-    "red": "#832e31",
-    "green": "#a63c40",
-    "yellow": "#d3494e",
-    "blue": "#fc595f",
-    "purple": "#df9395",
-    "cyan": "#ba8586",
-    "white": "#f5f5f5",
-    "brightBlack": "#5d6f71",
-    "brightRed": "#832e31",
-    "brightGreen": "#a63c40",
-    "brightYellow": "#d2494e",
-    "brightBlue": "#fc595f",
-    "brightPurple": "#df9395",
-    "brightCyan": "#ba8586",
-    "brightWhite": "#f5f5f5",
-    "background": "#151515",
-    "foreground": "#a1b0b8"
-}
-*/
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
